@@ -9,9 +9,6 @@ public class Programmer extends Engineer {
         this.language = language;
     }
 
-    public Programmer() {
-    }
-
     public boolean fixing(Bag bag) {
         return true;
     }

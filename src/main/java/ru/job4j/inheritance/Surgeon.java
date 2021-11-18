@@ -9,9 +9,6 @@ public class Surgeon extends Doctor {
         this.experience = experience;
     }
 
-    public Surgeon() {
-    }
-
     public BodyPart remove(Pacient pacient) {
         BodyPart leg = new BodyPart();
         return leg;

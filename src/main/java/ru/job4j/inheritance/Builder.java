@@ -9,9 +9,6 @@ public class Builder extends Engineer {
         this.material = material;
     }
 
-    public Builder() {
-    }
-
     public void build(House house) {
     }
 }

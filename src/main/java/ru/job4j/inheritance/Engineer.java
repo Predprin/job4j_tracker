@@ -9,9 +9,6 @@ public class Engineer extends Profession {
         this.experience = experience;
     }
 
-    public Engineer() {
-    }
-
     public Drawing draw(Customer customer) {
         Drawing communications = new Drawing();
         return communications;

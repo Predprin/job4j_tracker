@@ -8,9 +8,6 @@ public class Doctor extends Profession {
         this.gender = gender;
     }
 
-    public Doctor() {
-    }
-
     public Diagnosis heal(Pacient pacient) {
         Diagnosis diagnose = new Diagnosis();
         return diagnose;
