@@ -12,9 +12,8 @@ public class Library {
         books[1] = book2;
         books[2] = book3;
         books[3] = book4;
-        for (int i = 0; i < books.length; i++) {
-            Book bk = books[i];
-            System.out.println(bk.getName() + " - " + bk.getCount());
+        for (Book book : books) {
+            System.out.println(book.getName() + " - " + book.getCount());
         }
         System.out.println("Replace books[0] to books[3]");
         Book bk = books[0];
@@ -24,10 +23,9 @@ public class Library {
             System.out.println(book.getName() + " - " + book.getCount());
         }
         System.out.println();
-        for (int i = 0; i < books.length; i++) {
-            bk = books[i];
-            if (bk.getName().equals("Clean code")) {
-                System.out.println(bk.getName() + " - " + bk.getCount());
+        for (Book book : books) {
+            if ("Clean code".equals(book.getName())) {
+                System.out.println(book.getName() + " - " + book.getCount());
             }
         }
     }
