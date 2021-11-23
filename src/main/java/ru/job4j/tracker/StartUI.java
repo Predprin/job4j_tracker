@@ -5,8 +5,9 @@ import java.time.format.DateTimeFormatter;
 public class StartUI {
 
     public static void main(String[] args) {
-        Item date = new Item();
+        Item date = new Item(1, "Syntax Error");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         System.out.println(date.getCreated().format(formatter));
+        System.out.println(date);
     }
 }
