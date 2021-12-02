@@ -16,7 +16,7 @@ public class Matches {
                 turn = !turn;
                 count -= matches;
                 System.out.println("Спичек на столе осталось: " + count);
-            } else if (matches >= 1 && matches <= 3 && matches > count) {
+            } else if (matches > count) {
                 System.out.println("На столе нет столько спичек. "
                        + "Введите число не превышающее количество спичек");
             } else {
