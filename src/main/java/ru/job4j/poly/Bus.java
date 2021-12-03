@@ -3,13 +3,13 @@ package ru.job4j.poly;
 public class Bus implements Transport {
     @Override
     public void drive() {
-
+        System.out.println("Поездка на автобусе");
     }
 
     @Override
     public void passengers(int count) {
         if (count < 50) {
-            System.out.println("ДЛя всех пассажиров хватает сидячих мест.");
+            System.out.println("Для всех пассажиров хватает сидячих мест.");
         } else {
             System.out.println("Кому то приходиться стоять");
         }
@@ -17,7 +17,6 @@ public class Bus implements Transport {
 
     @Override
     public double refuel(int litre) {
-        double price = 45.80;
-        return litre * price;
+        return litre * 45.80;
     }
 }
